@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <title> GENERAL INFORMATION ABOUT OF MARDIN </title>
+    <link rel="stylesheet"  href="dosyalar/bootstrap.css">
+    <link rel="stylesheet"  href="dosyalar/bootstrap.min.css">
+    <link rel="stylesheet"  href="dosyalar/Stillerim.css">
+    <link rel="stylesheet"  href="ikon_style.css">   <!-- Toggler ikonu için -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- ikonlar için -->
+
+  </head>
+  <body>
+
+
+  <!--   *********************************************************************  -->
+
+    <!-- MENÜ -->
+    <nav class="navbar navbar-expand-lg kapsayici ">   
+      <!-- arkaplan için kapsayici classını kullandık-->
+      <div class="container-fluid">
+        <a class="navbar-brand ms-0 ms-md-5" href="#">   <!-- ms-0 ve ms-md-5  , ekran küçülünce (mobil sayfalar) için logoyu düzelttik. -->
+          <img src="resimler/logo_laryon.png" class="img-fluid logo" alt="">
+        </a>
+
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="icon-contrast"></span>  <!-- <span class="navbar-toggler-icon"> bunun yerine şimdikini yazarak ekran küçülünce çıkan ikonumuzu değiştirdik.-->
+        </button> 
+        
+        <!-- Menünün sağ tarafındaki seçenekler -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">     <!--Menüdeki secenekler: me(solda) ms(sağda) mx(ortada) -auto-->
+            <li class="nav-item me-5">   <!-- me-5 ile nav-item dan sonra boşluk bıraktık biraz.-->
+              <a class="nav-link active" aria-current="page" href="Ana_Sayfa.html">HOME</a>
+            </li>
+          
+
+            <li class="nav-item me-5 dropdown"> 
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CITIES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Mardin_Genel.html">MARDİN</a></li>
+                <li><a class="dropdown-item" href="#">ŞANLIURFA</a></li>
+                <!-- something else kısmını sildim    =>  <li><hr class="dropdown-divider"></li>
+                                                          <li><a class="dropdown-item" href="#">Something else here</a></li>   -->
+              </ul>
+            </li>
+
+            <li class="nav-item me-5 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                LEGENDS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Mardin_Efsaneler.html">Legends About of Mardin</a></li>
+                <li><a class="dropdown-item" href="#">Legends About of Şanlıurfa</a></li>
+              </ul>
+            </li>
+
+        </div>
+
+
+        <!-- Menünün sol tarafındaki seçenekler -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">     <!--Menüdeki secenekler: me(solda) ms(sağda) mx(ortada) -auto-->
+          
+            <li class="nav-item me-5">   
+              <a class="nav-link" href="Üye_Giriş_Sayfası.html">LOGIN</a>
+            </li>
+            <li class="nav-item me-5">   <!-- me-5 ile nav-item dan sonra boşluk bıraktık biraz.-->
+              <a class="nav-link" href="Üye_Kayıt_Sayfası.html"> SIGN UP</a>
+            </li>
+ 
+
+          <!-- Arama butonu şeysi 
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Ara..." aria-label="Ara...">
+            <button class="btn btn-outline-success" type="submit">Ara</button>
+          </form>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          -->
+          <!-- DİL DESTEĞİ -->
+            <li class="nav-item me">   
+              <a class="nav-link" href="Mardin_Genel.html">TR</a>
+            </li>
+
+            <li class="nav-item me">   
+              <a class="nav-link" href="Mardin_General(EN).html">EN</a>
+            </li>
+
+        </div>
+      </div>
+    </nav>
+    
+  <!--   *********************************************************************  -->
+
+
+<div class="container">
+
+    <div class="row"> 
+
+      <div class="col-md-4 çoküstboşluk">
+        <ul type="circle">
+          <li><a href="Mardin_Genel.html"><strong class="liste"> GENERAL </strong></a></li>
+          <li><a href="Mardin_Tarihi.html" ><strong class="liste"> HİSTORY </strong></a></li>
+          <li><a href="Mardin_Gezilecek_Yerler.html" ><strong class="liste"> PLACES TO VISIT </strong></a></li>
+          <li><a href="Mardin_Yöresine_Özgü_Yemekler.html" ><strong class="liste"> REGIONAL DISHES </strong></a></li>
+        </ul>
+      </div>
+    
+    
+        <div class="col-md-8 üstboşluk">
+    
+            <div class="col-md-12 başlık" >
+                <strong> GENERAL INFORMATION ABOUT OF MARDIN
+                <hr style="height: 3px;">
+                <br>
+                </strong>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-12 yazılar">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Mardin province is located in the Tigris Section of the Southeastern Anatolia Region.
+                    It is neighbor of borders with Syria. It is surrounded by Syria in the south, 
+                    Şanlıurfa province in the west, Diyarbakır and Batman provinces in the north, 
+                    Siirt province in the northeast and Şırnak province in the east.
+                    <br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Mardin is located in the province of the same name between the Tigris and Euphrates rivers in the Upper Mesopotamian basin. 
+                    This area used to be called by ancient Greeks “the country between two rivers”. 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    It was considered as one of the major depository of grains. 
+                    Because of its rich soil, it was the birthplace of many civilisations. 
+                    Agriculture and animal husbandry began in this basin and the earliest legends originated here.
+                    <br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    The legends of Noah’s Flood, the Prophet Idris (known in the Bible as Enoch), and many others are attributed to this land.
+                </div>
+            </div>
+
+        </div>
+    </div>    
+ 
+
+
+    <div class="row"> 
+        
+        <div class="col-md-8 üstboşluk">
+            <div class="row">
+                <div class="col-md-12 yazılar">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    It started out as a starter and country plan from a 1960's perspective. 
+                    The population of the four districts to neighboring provinces in 1990 was 14.4%. 
+                    For the first time in 2000 population, rural countryside, those who are behind the city. 
+                    The most important in this are the events related to the homages and 90s encounters. 
+                    Due to security concerns, he started to move to Mardin city from both parts of the province and other provinces.
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    The urban population ratio is 60%, the rural population ratio is 43%. 
+                    Districts with the highest population are Kızıltepe, Merkez, Nusaybin and Midyat, respectively. 
+                    It has a young population structure. Compared to 2000, the rate of the population under the age of 15 is 44.8%.
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    It is one of the provinces with the most differentiated population in Turkey. 
+                    Kurds, Christian Assyrians, Sunni Arabs, Turks, Yezidis and Armenians live in the province. 
+                    Over time, the Syriac and Yazidi population decreased due to immigration. 
+                    A small number of Assyrians live in the Mardin and Midyat regions of Beirut, the capital of Lebanon.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 üstboşluk">
+            <br><br>
+            <img src="resimler/genel_tarih/harita_mardin_genel1.png" alt="" style="width: 100%; border: 1px solid black;">
+            
+        </div>
+
+
+        
+    </div>  
+
+    <div class="row"> 
+        
+        <div class="col-md-8 ">
+            <div class="row">
+                <div class="col-md-12 çokaltboşluk yazılar">
+                    <br><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Mardin has a hot-summer Mediterranean climate (Köppen: Csa, Trewartha: Cs) with very hot, 
+                    dry summers and chilly, wet, and occasionally snowy winters. Mardin is very sunny, with over 3000 hours of sun per year. 
+                    While temperatures in summer can easily reach 40 °C (104 °F), because of its continental nature, 
+                    wintry weather is still somewhat common between the months of December and March, and it usually snows for a week or two. 
+                    The highest recorded temperature is 42.5 °C (108.5 °F).M
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 üstboşluk altboşluk">
+          <br><br><br>
+            <img src="resimler/genel_tarih/mardin_genel2.jpg" alt="" style="width: 100%; border: 2px solid black;">
+            
+        </div>
+    </div>  
+
+    <div class="row altboşluk">
+        <div class="col-md-6">
+            <img src="resimler/genel_tarih/sokaklar_mardin_genel3.png" alt="" style="width: 100%; border: 2px solid black;">
+        </div>
+        <div class="col-md-6">
+            <img src="resimler/genel_tarih/mardin_genel4.png" alt="" style="width: 95%; border: 2px solid black;">
+        </div>
+    </div>
+
+</div>
+
+
+  <script src="dosyalar/bootstrap.js" ></script>
+</body>
+
+<footer class="son">
+  <strong><i class="fa fa-copyright" aria-hidden="true"></i>
+    All rights of this site belong to Havvanur Bozkurt.
+  </strong>
+</footer>
+
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <title> LARYON </title>
+    <link rel="stylesheet"  href="dosyalar/bootstrap.css">
+    <link rel="stylesheet"  href="dosyalar/bootstrap.min.css">
+    <link rel="stylesheet"  href="dosyalar/Stillerim.css">
+    <link rel="stylesheet"  href="ikon_style.css">   <!-- Toggler ikonu için -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- ikonlar için -->
+
+    <style>
+      body{
+        background-color: rgb(140, 217, 240);
+      }
+    </style>
+  </head>
+  <body>
+
+
+  <!--   *********************************************************************  -->
+
+    <!-- MENÜ -->
+    <nav class="navbar navbar-expand-lg kapsayici ">   
+      <!-- arkaplan için kapsayici classını kullandık-->
+      <div class="container-fluid">
+        <a class="navbar-brand ms-0 ms-md-5" href="#">   <!-- ms-0 ve ms-md-5  , ekran küçülünce (mobil sayfalar) için logoyu düzelttik. -->
+          <img src="resimler/logo_laryon.png" class="img-fluid logo" alt="">
+        </a>
+
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="icon-contrast"></span>  <!-- <span class="navbar-toggler-icon"> bunun yerine şimdikini yazarak ekran küçülünce çıkan ikonumuzu değiştirdik.-->
+        </button> 
+        
+        <!-- Menünün sağ tarafındaki seçenekler -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">     <!--Menüdeki secenekler: me(solda) ms(sağda) mx(ortada) -auto-->
+            <li class="nav-item me-5">   <!-- me-5 ile nav-item dan sonra boşluk bıraktık biraz.-->
+              <a class="nav-link active" aria-current="page" href="Ana_Sayfa.html">EV</a>
+            </li>
+          
+
+            <li class="nav-item me-5 dropdown"> 
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ŞEHİRLER
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Mardin_Genel.html">MARDİN</a></li>
+                <li><a class="dropdown-item" href="#">ŞANLIURFA</a></li>
+                <!-- something else kısmını sildim    =>  <li><hr class="dropdown-divider"></li>
+                                                          <li><a class="dropdown-item" href="#">Something else here</a></li>   -->
+              </ul>
+            </li>
+
+            <li class="nav-item me-5 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EFSANELER
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Mardin_Efsaneler.html">Mardin ile İlgili Efsaneler</a></li>
+                <li><a class="dropdown-item" href="#">Şanlıurfa ile İlgili Efsanler</a></li>
+              </ul>
+            </li>
+
+        </div>
+
+
+        <!-- Menünün sol tarafındaki seçenekler -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">     <!--Menüdeki secenekler: me(solda) ms(sağda) mx(ortada) -auto-->
+          
+            <li class="nav-item me-5">   
+              <a class="nav-link" href="Üye_Giriş_Sayfası.html">GİRİŞ YAP</a>
+            </li>
+            <li class="nav-item me-5">   <!-- me-5 ile nav-item dan sonra boşluk bıraktık biraz.-->
+              <a class="nav-link" href="Üye_Kayıt_Sayfası.html"> ÜYE OL</a>
+            </li>
+ 
+
+          <!-- Arama butonu şeysi 
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Ara..." aria-label="Ara...">
+            <button class="btn btn-outline-success" type="submit">Ara</button>
+          </form>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          -->
+
+          <!-- DİL DESTEĞİ -->
+            <li class="nav-item me">   
+              <a class="nav-link" href="Ana_Sayfa.html">TR</a>
+            </li>
+
+            <li class="nav-item me-5">     <!-- EN'den sonra boşluk bıraktık.-->
+              <a class="nav-link" href="Home_Page.html">EN</a>
+            </li>
+
+        </div>
+      </div>
+    </nav>
+    
+  <!--   *********************************************************************  -->
+
+
+ <!-- SLİDER -->
+
+ <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner" style="height: 500px;">
+    <div class="carousel-item active">
+      <img src="resimler/slider/resim1.jpg" class="d-block w-100 h-100" alt="...">  
+    </div>
+    <div class="carousel-item">
+      <img src="resimler/slider/resim2.jpg" class="d-block w-100 h-100" alt="...">  <!-- 1920-690 -->
+    </div>
+    <div class="carousel-item">
+      <img src="resimler/slider/resim3.jpeg" class="d-block w-100 h-100" alt="...">  
+    </div>
+    <div class="carousel-item">
+      <img src="resimler/slider/resim4.jpg" class="d-block w-100 h-100" alt="...">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Önceki</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Sonraki</span>
+  </button>
+</div>
+
+
+<!--   *********************************************************************  -->
+
+
+<div class="container üstboşluk">
+    
+    <div class="row">
+      <div class="col-md-7 yazı">
+        <strong>
+        Seyahat etmekten hoşlanır mısınız? Tabii ki dediğinizi duyar gibiyim. 😄
+        <br>
+        Seyahat etmek yeni yerler görmek, yeni insanlar tanımak, farklı lezzetleri tatmak ve şehrin, 
+        gezdiğimiz yerin havasını tüm bedenimizde hissetmektir. Tarifsiz bir mutluluk verir. 
+        Hele bir de seyahat esnasında her şey planladığınız gibi gitmişse o zaman değmeyin keyfimize. 😋
+        <br><br>
+        Bir seyahate başlamadan önce gideceğimiz yeri iyi tespit etmek gerekir.  
+        Zorunlu bir seyahat değilse (iş, okul, sağlık) öncelikle gideceğiniz yer hakkında bir ön araştırma yapmalısınız.
+        Gideceğiniz yeri belirledikten sonra o yer hakkında bilgi edinmelisiniz. İşte ben ve sitem sizin için buradayız. 🙂
+        </strong>
+        <br>
+      </div>
+    
+      <div class="col-md-5 iletisim">
+        <h1><strong> ⬇ BİZE ULAŞIN ⬇ <hr style="height: 5px; color: #12229d; text-align: center;"> </strong></h1>
+        <ul>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="#"> &nbsp; INSTAGRAM  </a></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i><a href="#"> &nbsp; TWİTTER  </a></li>
+          <li><i class="fa fa-linkedin" aria-hidden="true"></i><a href="#"> &nbsp; LINKEDIN  </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="row üstboşluk">
+      
+      <div class="col-md-12 haberBaslık">
+          <strong> HABERLER </strong>
+      </div>
+      
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <!-- Haber 1 -->
+        <div class="card card1" style="width: 25rem;">
+          <img class="card-img-top" src="resimler/haberler/haber_bitlis1.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">BİTLİS'İN TARİHİ TAŞ EVLERİNE ZİYARETÇİ AKINI OLUŞTU</h5>
+            <p class="card-text">
+              Bitlis'in Hizan ilçesine bağlı Gayda köyünün yıllara meydan okuyan taş evleri, sonbahar birlikte ziyaretçilerini ağırlıyor. 
+              Çoğu, derin vadiler arasındaki yamaçlara kurulu çok katlı tarihi taş evlerden oluşan köyler, 
+              sonbaharda fotoğraf sanatçıları, gezginler ve turistlerden büyük ilgi görüyor.
+            </p>
+            <a href="Haber_Sayfası.html" class="btn btn-primary">Devamı için tıklayınız.</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <!-- Haber 2 -->
+        <div class="card card2" style="width: 25rem;">
+          <img class="card-img-top" src="resimler/haberler/haber_spildağı.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">SPİL DAĞINDAN SONBAHAR MANZARALARI</h5>
+            <p class="card-text">
+              Manisa'da, endemik bitkileri ve yılkı atları ile ilgi çeken, 1517 rakımdaki Spil Dağı Milli Parkı'nda sonbahar güzelliği yaşanıyor. 
+              Orman manzarası, havadan dronla görüntülendi.
+            </p>
+            <a href="Üye_Kayıt_Sayfası.html" class="btn btn-primary">Devamı için tıklayınız.</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-12 altboşluk">
+          <!-- Haber 3 -->
+          <div class="card card3" style="width: 25rem;">
+            <img class="card-img-top" src="resimler/haberler/haber_yeraltımağarası.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">YER ALTINDAKİ GİZEMLİ DÜNYA: KARACA MAĞARASI</h5>
+              <p class="card-text">
+                Gümüşhane'de dünyanın sayılı damla taş mağaralarından olan, 150 milyon yıllık olduğu belirtilen Karaca Mağarası, 
+                yaz turizm sezonunda 90 bin ziyaretçiyi ağırladı.</p>
+              <a href="Üye_Giriş_Sayfası.html" class="btn btn-primary">Devamı için tıklayınız.</a>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+</div>
+
+
+<script src="dosyalar/bootstrap.js" ></script>
+</body>
+
+<footer class="son">
+        <strong><i class="fa fa-copyright" aria-hidden="true"></i>
+          Bu sitenin tüm hakları Havvanur Bozkurt'a aittir.
+        </strong>
+</footer>
+
+</html>

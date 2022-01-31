@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <title> LARYON </title>
+    <link rel="stylesheet"  href="dosyalar/bootstrap.css">
+    <link rel="stylesheet"  href="dosyalar/bootstrap.min.css">
+    <link rel="stylesheet"  href="dosyalar/Stillerim.css">
+    <link rel="stylesheet"  href="ikon_style.css">   <!-- Toggler ikonu için -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- ikonlar için -->
+
+  </head>
+  <body>
+
+
+  <!--   *********************************************************************  -->
+
+    <!-- MENÜ -->
+    <nav class="navbar navbar-expand-lg kapsayici ">   
+      <!-- arkaplan için kapsayici classını kullandık-->
+      <div class="container-fluid">
+        <a class="navbar-brand ms-0 ms-md-5" href="#">   <!-- ms-0 ve ms-md-5  , ekran küçülünce (mobil sayfalar) için logoyu düzelttik. -->
+          <img src="resimler/logo_laryon.png" class="img-fluid logo" alt="">
+        </a>
+
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="icon-contrast"></span>  <!-- <span class="navbar-toggler-icon"> bunun yerine şimdikini yazarak ekran küçülünce çıkan ikonumuzu değiştirdik.-->
+        </button> 
+        
+        <!-- Menünün sağ tarafındaki seçenekler -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">     <!--Menüdeki secenekler: me(solda) ms(sağda) mx(ortada) -auto-->
+            <li class="nav-item me-5">   <!-- me-5 ile nav-item dan sonra boşluk bıraktık biraz.-->
+              <a class="nav-link active" aria-current="page" href="Home_Page.html">HOME</a>
+            </li>
+          
+
+            <li class="nav-item me-5 dropdown"> 
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CITIES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Mardin_Genel.html">MARDİN</a></li>
+                <li><a class="dropdown-item" href="#">ŞANLIURFA</a></li>
+                <!-- something else kısmını sildim    =>  <li><hr class="dropdown-divider"></li>
+                                                          <li><a class="dropdown-item" href="#">Something else here</a></li>   -->
+              </ul>
+            </li>
+
+            <li class="nav-item me-5 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                LEGENDS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Mardin_Efsaneler.html">Legends About of Mardin</a></li>
+                <li><a class="dropdown-item" href="#">Legends About of Şanlıurfa</a></li>
+              </ul>
+            </li>
+
+        </div>
+
+
+        <!-- Menünün sol tarafındaki seçenekler -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">     <!--Menüdeki secenekler: me(solda) ms(sağda) mx(ortada) -auto-->
+          
+            <li class="nav-item me-5">   
+              <a class="nav-link" href="Üye_Giriş_Sayfası.html">LOGIN</a>
+            </li>
+            <li class="nav-item me-5">   <!-- me-5 ile nav-item dan sonra boşluk bıraktık biraz.-->
+              <a class="nav-link" href="Üye_Kayıt_Sayfası.html"> SIGN UP</a>
+            </li>
+ 
+
+          <!-- Arama butonu şeysi 
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Ara..." aria-label="Ara...">
+            <button class="btn btn-outline-success" type="submit">Ara</button>
+          </form>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          -->
+          <!-- DİL DESTEĞİ -->
+            <li class="nav-item me">   
+              <a class="nav-link" href="Ana_Sayfa.html">TR</a>
+            </li>
+
+            <li class="nav-item me">   
+              <a class="nav-link" href="Home_Page.html">EN</a>
+            </li>
+
+        </div>
+      </div>
+    </nav>
+    
+  <!--   *********************************************************************  -->
+
+
+ <!-- SLİDER -->
+
+ <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner" style="height: 500px;">
+    <div class="carousel-item active">
+      <img src="resimler/slider/resim1.jpg" class="d-block w-100 h-100" alt="...">  
+    </div>
+    <div class="carousel-item">
+      <img src="resimler/slider/resim2.jpg" class="d-block w-100 h-100" alt="...">  <!-- 1920-690 -->
+    </div>
+    <div class="carousel-item">
+      <img src="resimler/slider/resim3.jpeg" class="d-block w-100 h-100" alt="...">  
+    </div>
+    <div class="carousel-item">
+      <img src="resimler/slider/resim4.jpg" class="d-block w-100 h-100" alt="...">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!--   *********************************************************************  -->
+
+
+
+<div class="container üstboşluk">
+
+    
+  <div class="row">
+
+
+      <div class="col-md-7 yazı">
+        <strong>
+        Do you like to travel? Of course I can hear you say. 😄
+        <br>
+        Traveling is seeing new places, getting to know new people, tasting different flavors and feeling the air of the city and 
+        the place we are visiting all over our body. It gives indescribable happiness. 
+        Especially if everything went as you planned during the trip, then it's not worth our pleasure. 😋
+        <br><br>
+        Before starting a trip, it is necessary to determine the destination well. 
+        If it is not a compulsory travel (work, school, health), you should first do a preliminary research about the place you are going to.
+        After you determine the place you are going to, you should learn about that place. Here me and my site are here for you. 🙂
+        </strong>
+        <br>
+      </div>
+    
+      <div class="col-md-5 iletisim">
+        <h1><strong> ⬇ CONTACT US ⬇ <hr style="height: 5px; color: #12229d; text-align: center;"> </strong></h1>
+        <ul>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="#"> &nbsp; INSTAGRAM  </a></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i><a href="#"> &nbsp; TWİTTER  </a></li>
+          <li><i class="fa fa-linkedin" aria-hidden="true"></i><a href="#"> &nbsp; LINKEDIN  </a></li>
+        </ul>
+    </div>
+
+    </div>
+
+
+    <div class="row üstboşluk">
+      
+      <div class="col-md-12 haberBaslık">
+          <strong> NEWS </strong>
+      </div>
+      
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <!-- Haber 1 -->
+        <div class="card card1" style="width: 25rem;">
+          <img class="card-img-top" src="resimler/haberler/haber_bitlis1.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"> VISITORS CREATED TO THE HISTORICAL STONE HOUSES OF BITLIS </h5>
+            <p class="card-text">
+              The stone houses of Gayda village of Hizan district of Bitlis, which defy the years, welcome their visitors together in autumn. 
+              The villages, mostly consisting of multi-storey historical stone houses built on the slopes between deep valleys, 
+              attract great attention from photographers, travelers and tourists in autumn.
+            </p>
+            <a href="Haber_Sayfası.html" class="btn btn-primary">Click to continue.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <!-- Haber 2 -->
+        <div class="card card2" style="width: 25rem;">
+          <img class="card-img-top" src="resimler/haberler/haber_spildağı.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">AUTUMN VIEWS FROM SPIL MOUNTAIN</h5>
+            <p class="card-text">
+                In Manisa, the beauty of autumn is experienced in the Spil Mountain National Park, at an altitude of 1517, 
+                which attracts attention with its endemic plants and horses.
+                Forest landscape, viewed from aerial drone.
+            </p>
+            <a href="Üye_Kayıt_Sayfası.html" class="btn btn-primary">Click to continue.</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-12 altboşluk">
+          <!-- Haber 3 -->
+          <div class="card card3" style="width: 25rem;">
+            <img class="card-img-top" src="resimler/haberler/haber_yeraltımağarası.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">MYSTERIOUS WORLD UNDERGROUND: KARACA CAVE</h5>
+                <p class="card-text">
+                    Karaca Cave, which is one of the few drip stone caves in the world in Gümüşhane and is stated to be 150 million years old, 
+                    hosted 90 thousand visitors during the summer tourism season.
+                </p>
+                <a href="Üye_Giriş_Sayfası.html" class="btn btn-primary">Click to continue.</a>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+</div>
+
+
+
+  <script src="dosyalar/bootstrap.js" ></script>
+</body>
+
+
+<footer class="son">
+  <strong><i class="fa fa-copyright" aria-hidden="true"></i>
+    All rights of this site belong to Havvanur Bozkurt.
+  </strong>
+</footer>
+
+
+</html>
