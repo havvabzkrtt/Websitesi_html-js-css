@@ -1,5 +1,4 @@
 # Website_html-js-css
 
 
-Html, css ve javascript kullanarak yapıklan bir websitesi tasarımı.
-Konusu gezilecek şehirler hakkında.
+konusu gezilecek şehirler olan; Html, css ve javascript kullanılarak yapılan bir websitesinin arayüz tasarımı.
